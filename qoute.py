@@ -13,7 +13,7 @@ app = Flask(__name__)
 cors = CORS(app)
 schema = JsonSchema(app)
 client = MongoClient(
-    "mongodb+srv://arpit:iluvmuma@arpit-xcm5n.gcp.mongodb.net/test?retryWrites=true&w=majority")
+    "MONGOURI")
 
 qoute_schema = {
     'uuid': {'type': "string"},
